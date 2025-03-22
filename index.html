@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEXCO</title>
+    <link rel="stylesheet" href="/css/1.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .container {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+        .logo {
+            width: 80px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .menu {
+            display: flex;
+            flex-direction: column;
+        }
+        .menu button {
+            background-color: rgba(255, 255, 255, 0);
+            border: none;
+            padding: 10px;
+            margin: 5px 0;
+            cursor: pointer;
+            transition: transform 0.3s;
+            color: aliceblue;
+        }
+        .menu button:hover {
+            transform: translateX(10px);
+        }
+  .boton-grande {
+    font-size: 20px; 
+    padding: 30px 60px; 
+    border-radius: 10px; 
+  }
+  .contenedor-video {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+  }
+
+  .video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+
+  .texto-encima {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+  }
+
+    </style>
+
+</head>
+<body>
+   <div class="contenedor-video">
+    <video class="video-background" autoplay loop muted>
+        <source src="/video/video-de-fondomp4_i7BAOWrg.mp4" type="video/mp4">
+    </video>
+    <div class="texto-encima">
+        FERIA    EXPOSICIÓN <br>
+         INTERNACIONAL DE <br>
+             COCHABAMBA
+      </div>
+      </div>
+    <div class="container">
+        <img src="https://fexco.com.bo/img/logo-light@2x.png" min-width="1600px" min-width="1000px" alt="Logo" class="logo">
+        <div class="menu">
+            <button>INICIO</button>
+            <button>QUE ES FEXCO</button>
+            <button>RECIENTO FERIAL</button>
+            <button>NUESTROS AMBIENTES</button>
+            <button>EVENTOS</button>
+            <button>MAPA Y CONTACTOS</button>
+        </div>
+    </div>
+</body>
+</html>
